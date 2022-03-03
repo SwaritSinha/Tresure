@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>START</title>
+</head>
+<body>
+<h1 style="color:gold";>FIND THE TRESURE</h1>
+<p style="color:gold";>There is a secret passage and click on it.Clue:it will be written the word "KEY"</p>
+<a href="passage1.html" style="color:black";>KEY</a> 
+<img src="./1633666657829(2).jpg">
+<style>
+body{
+    background-color: black;
+    text-shadow: aqua;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+}
+</style>
+<script>
+    document.onkeydown = function (event) {
+        event = (event || window.event);
+        if (event.keyCode == 123) {
+            return false;
+        }
+    }
+
+    document.onkeydown = function (event) {
+        event = (event || window.event);
+        if (event.keyCode == 44) {
+            return false;
+        }
+    }
+    window.onbeforeunload = function(event) {
+  var message = 'Are you sure?';
+  if (window.event) {
+    console.log(window.event);
+  }
+  event = event || window.event;
+  event.preventDefault = true;
+  event.cancelBubble = true;
+  event.returnValue = message;
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passage 1</title>
+</head>
+<body>
+<p>You found Passage 1</p>
+<p style="color:gold";>Find the  secret passage of passage2 and click on it.</p>
+<div id="Superior">
+<img src="./IMG_20220301_114250(2).jpg">
+</div>
+<script>
+    var pokemonimg=document.getElementById("Superior");
+pokemonimg.onclick=()=>{
+    location.href="./passage2.html"
+    }
+</script>
+<style>
+    body{
+        background-color: black;
+        text-shadow: aqua;
+        font-family:'Times New Roman', Times, serif;
+        text-align: center;
+    }
+    </style>
+    <script>
+        document.onkeydown = function (event) {
+            event = (event || window.event);
+            if (event.keyCode == 123) {
+                return false;
+            }
+        }
+    
+        document.onkeydown = function (event) {
+            event = (event || window.event);
+            if (event.keyCode == 44) {
+                return false;
+            }
+        }
+        window.onbeforeunload = function(event) {
+      var message = 'Are you sure?';
+      if (window.event) {
+        console.log(window.event);
+      }
+      event = event || window.event;
+      event.preventDefault = true;
+      event.cancelBubble = true;
+      event.returnValue = message;
+    }
+    </script>
+</body>
+</html>
